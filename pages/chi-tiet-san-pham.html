@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../assets/css/style.css" />
-    <link rel="icon" href="./assets/image/logo-small.png">
+    <link rel="icon" href="../assets/image/logo-small.png">
     <title>Website - Chi tiết sản phẩm</title>
   </head>
   <body>
     <secsion class="top">
       <div class="container">
         <div class="row">
-          <a class="top-logo" href="/" title="Home page"><img src="../assets/image/logo.png" alt="logo-brand"/></a>
+          <a class="top-logo" href="../index.html" title="Home page"><img src="../assets/image/logo.png" alt="logo-brand"/></a>
           <div class="top-menu-items">
             <ul>
               <li>
                 <a href="" class="">Nữ</a>
                 <ul class="top-menu-item">
-                  <li><a href="./danh-muc-san-pham.html">Hàng nữ mới về</a></li>
+                  <li><a href="../pages/danh-muc-san-pham.html">Hàng nữ mới về</a></li>
                   <li><a href="">Hướng dương đón nắng</a></li>
                   <li><a href="">BST Áo dài Hoàng Cúc</a></li>
                   <li><a href="">Essential Sweatsuit</a></li>
@@ -148,8 +148,8 @@
                 <input type="text" placeholder="tìm kiếm" />
                 <i class="fas fa-search"></i>
               </li>
-              <li class="" title="Đăng nhập"><a href="" class=""><i class="fas fa-user"></i></a></li>
-              <li class="" title="Giỏ hàng"><a href="" class=""><i class="fas fa-shopping-cart"></i></a></li>
+              <li class="" title="Đăng nhập"><a href="../pages/" class=""><i class="fas fa-user"></i></a></li>
+              <li class="" title="Giỏ hàng"><a href="../pages/gio-hang.html" class=""><i class="fas fa-shopping-cart"></i></a></li>
             </ul>
           </div>
         </div>
@@ -170,7 +170,8 @@
         <div class="product-content row">
           <div class="product-content-left row">
             <div class="product-content-left-big-img">
-              <img src="../assets/image/sp1.1.jpg" id="imgMain" alt="" />
+              <img id="imgMain" src="../assets/image/sp1.1.jpg" alt="" />
+              <div id="imgZoom" class="img-zoom-result"></div>
             </div>
             <div class="product-content-left-small-img">
               <img src="../assets/image/sp1.1.jpg" id="img1" onclick="changeImg(id)" alt="" />
@@ -179,6 +180,10 @@
               <img src="../assets/image/sp1.4.jpg" id="img4" onclick="changeImg(id)" alt="" />
             </div>
           </div>
+          <!-- <div class="imgNav">
+            <span class="navPre"><i class="fas fa-angle-up"></i></span>
+            <span class="navNext"><i class="fas fa-angle-down"></i></span>
+          </div> -->
           <div class="product-content-right">
             <div class="product-content-right-product-name">
               <h1>ÁO THUN CỔ TRÒN MS 57E2969</h1>
@@ -370,6 +375,6 @@
       </div>
     </section>
 
-    <script src="../assets/js/productList.js"></script>
+    <script src="../assets/js/productDetail.js"></script>
   </body>
 </html>
