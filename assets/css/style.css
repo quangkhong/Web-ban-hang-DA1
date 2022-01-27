@@ -2097,19 +2097,64 @@ a{
 
 
 /* -------------------------------- */
-#price-lower, #price-higher {
-    display: none;
-}
 
 @keyframes slide-down {
     0% {opacity: 0;}
     20% {opacity: 1;}
   }
 
-#price-default, #price-higher, #price-lower {
-    animation: slide-down 2s ease-in;
+.cartegory-right-content-item {
+    animation: slide-down 1.5s ease-in;
 }
 
 .collapse-in {
     display: none;
+}
+
+/* Fading animation */
+/* .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+} */
+
+/* CSS create image zoom / chi tiet san pham.html */
+/* .product-content-left-big-img {
+    position: relative;
+}
+
+.img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    width: 40px;
+    height: 40px;
+}
+
+.img-zoom-result {
+    border: 1px solid #d4d4d4;
+    width: 500px;
+    height: 300px;
+} */
+#imgMain {
+    transition: transform .2s; /* Animation */
+}
+#imgMain:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+
+.product-content-left-small-img-icon {
+    display: block;
 }
