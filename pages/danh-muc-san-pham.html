@@ -13,7 +13,7 @@
     <secsion class="top">
       <div class="container">
         <div class="row">
-          <a class="top-logo" href="/" title="Home page"><img src="../assets/image/logo.png" alt="logo-brand"/></a>
+          <a class="top-logo" href="../index.html" title="Home page"><img src="../assets/image/logo.png" alt="logo-brand"/></a>
           <div class="top-menu-items">
             <ul>
               <li>
@@ -204,10 +204,10 @@
             </div>
 
             <div class="cartegory-right-top-item">
-                <select id="box1" onChange="changeProductList(this.value);">
-                  <option value="2">Sắp xếp</option>
-                  <option value="1">Giá cao đến thấp</option>
-                  <option value="0">Giá thấp đến cao</option>
+                <select id="box1" onChange="sortItems(this.value);">
+                  <option value="">Sắp xếp</option>
+                  <option value="desc">Giá cao đến thấp</option>
+                  <option value="asc">Giá thấp đến cao</option>
                 </select>
               </div>
             <!-- <div class="cartegory-right-top-item">
@@ -219,7 +219,7 @@
             </div> -->
 
 
-            <div id="price-default" class="cartegory-right-content row">
+            <div id="products" class="cartegory-right-content row">
                 <a href="./chi-tiet-san-pham.html" class="cartegory-right-content-item">
                   <img src="../assets/image/sp1.jpg" alt="" />
                   <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
@@ -253,7 +253,7 @@
                 <a class="cartegory-right-content-item">
                   <img src="../assets/image/sp7.jpg" alt="" />
                   <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                  <p>790.000<sup>đ</sup></p>
+                  <p>720.000<sup>đ</sup></p>
                 </a>
                 <a class="cartegory-right-content-item">
                   <img src="../assets/image/sp8.jpg" alt="" />
@@ -261,96 +261,6 @@
                   <p>390.000<sup>đ</sup></p>
                 </a>
               </div>
-            <!-- --------------------------------------------------------------------- -->
-            <div id="price-lower" class="cartegory-right-content row">
-                <a href="../chi-tiet-san-pham.html" class="cartegory-right-content-item">
-                    <img src="../assets/image/sp8.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>390.000<sup>đ</sup></p>
-                  </a>
-                  <a class="cartegory-right-content-item">
-                    <img src="../assets/image/sp2.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>590.000<sup>đ</sup></p>
-                  </a>
-                  <a class="cartegory-right-content-item">
-                    <img src="../assets/image/sp3.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>649.000<sup>đ</sup></p>
-                  </a>
-                  <a class="cartegory-right-content-item">
-                    <img src="../assets/image/sp6.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>749.000<sup>đ</sup></p>
-                  </a>
-                  <a class="cartegory-right-content-item">
-                    <img src="../assets/image/sp5.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>749.000<sup>đ</sup></p>
-                  </a>
-                  <a href="Chi tiết sản phẩm.html" class="cartegory-right-content-item">
-                    <img src="../assets/image/sp1.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>790.000<sup>đ</sup></p>
-                  </a>
-                  <a class="cartegory-right-content-item">
-                    <img src="../assets/image/sp4.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>790.000<sup>đ</sup></p>
-                  </a>
-                  <a class="cartegory-right-content-item">
-                    <img src="../assets/image/sp7.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>790.000<sup>đ</sup></p>
-                  </a>
-            </div>
-
-            <!-- ------------------------------------------ -->
-            <div id="price-higher" class="cartegory-right-content row">
-                <a href="../chi-tiet-san-pham.html" class="cartegory-right-content-item">
-                    <img src="../assets/image/sp7.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>790.000<sup>đ</sup></p>
-                  </a>
-                <a class="cartegory-right-content-item">
-                    <img src="../assets/image/sp4.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>790.000<sup>đ</sup></p>
-                  </a>
-                <a href="Chi tiết sản phẩm.html" class="cartegory-right-content-item">
-                    <img src="../assets/image/sp1.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>790.000<sup>đ</sup></p>
-                  </a>
-                <a class="cartegory-right-content-item">
-                    <img src="../assets/image/sp5.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>749.000<sup>đ</sup></p>
-                  </a>
-                <a class="cartegory-right-content-item">
-                    <img src="../assets/image/sp6.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>749.000<sup>đ</sup></p>
-                  </a>
-                <a class="cartegory-right-content-item">
-                    <img src="../assets/image/sp3.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>649.000<sup>đ</sup></p>
-                  </a>
-                <a class="cartegory-right-content-item">
-                    <img src="../assets/image/sp2.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>590.000<sup>đ</sup></p>
-                  </a>
-                <a class="cartegory-right-content-item">
-                    <img src="../assets/image/sp8.jpg" alt="" />
-                    <h1>ĐẦM ÔM HỌA TIẾT HOA MS 48T0033</h1>
-                    <p>390.000<sup>đ</sup></p>
-                  </a>
-              </div>
-
-              <!-- ------------------------------ -->
-
             <div class="cartegory-right-bottom row">
               <div class="cartegory-right-bottom-items">
                 <p>Hiện thị 2 <span>|</span> 4 sản phẩm</p>
@@ -369,8 +279,8 @@
       <div class="footer-container">
         <p>Tải ứng dụng IVY moda</p>
         <div class="app-google">
-          <a href=""><img src="image/appstore.jpg" alt="" /></a>
-          <a href=""> <img src="image/googleplay.jpg" alt="" /></a>
+          <a href=""><img src="../assets/image/appstore.jpg" alt="" /></a>
+          <a href=""> <img src="../assets/image/googleplay.jpg" alt="" /></a>
         </div>
         <p>Nhận bản tin IVY moda</p>
         <div class="input-email">
@@ -379,7 +289,7 @@
         </div>
         <div class="footer-items">
           <li>
-            <a href=""><img src="image/dathongbao.png" alt="" /></a>
+            <a href=""><img src="../assets/image/dathongbao.png" alt="" /></a>
           </li>
           <li><a href="">Liên hệ</a></li>
           <li><a href="">Tuyển dụng</a></li>
